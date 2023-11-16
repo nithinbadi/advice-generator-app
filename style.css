@@ -35,6 +35,11 @@ button{
     border-radius:100%;
     
 }
+button:hover{
+    box-shadow:0 0 2em 2px hsl(150, 100%, 66%);
+    translate: 0 -2px;
+    transition: all 300ms;
+}
 #id{
     font-size:10px;
     letter-spacing:2px;
