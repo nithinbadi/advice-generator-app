@@ -1,16 +1,14 @@
 body{
-    margin:50%;
-    height:100vh;
+    margin:50vh;
     background:hsl(218, 23%, 16%);
     font-family:'Manrope',sans-serif;
-    display:flex;
-    justify-content:center;
+  
     font-size:28px;
 }
 
 .divider-desktop{
     position:absolute;
-    visibility:hidden;
+    display:none;
 }
 .divider-mobile{
     visibility:visible;
@@ -29,16 +27,20 @@ body{
 
 button{
     width:50px;height:50px;
-    position:relative;top:20px;
+    position:relative;top:25px;
     background:hsl(150, 100%, 66%);
     border:none;
     border-radius:100%;
+    
     
 }
 button:hover{
     box-shadow:0 0 2em 2px hsl(150, 100%, 66%);
     translate: 0 -2px;
     transition: all 300ms;
+}
+.divider-desktop,.divider-mobile{
+    
 }
 #id{
     font-size:10px;
@@ -53,11 +55,16 @@ button:hover{
 }
 @media (min-width: 375px){
     .container{
-        width:80vw;
+        width:90vw;
+        max-width:500px;
+        height:40vh;
+    }
+    button{
+        top:25px;
     }
     .divider-desktop{
         position:relative;
-        visibility:visible;
+        display:inline-block;
     }
     .divider-mobile{
         position:absolute;
